@@ -7,6 +7,8 @@ const Search = () => {
 
     const [container, setContainer] = useState([]);
 
+
+
     useEffect(() => {
         fetch(`https://imdb8.p.rapidapi.com/auto-complete?q=+${value}`, {
             "method": "GET",
@@ -44,7 +46,8 @@ const Search = () => {
                 {container.map((item, index) => {
                     return (
                         <div key={index} className='element-div'>
-                            <p>{item.d.l}</p>
+                            <img src={item.i.imageUrl} alt='' />
+                            <p>{item.l}</p>
                         </div>
                     )
                 })}
