@@ -40,7 +40,7 @@ const Search = () => {
 
             <form>
                 <input type="text" value={value} onChange={handleChange} />
-                <button type='submit'>Submit</button>
+                <button type='submit'>Search</button>
             </form>
             <div className='element'>
                 {container.map((item, index) => {

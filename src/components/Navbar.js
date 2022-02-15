@@ -36,14 +36,8 @@ const Navbar = () => {
                         {click ? <FaTimes style={{ color: '#fff' }} /> : <FaBars style={{ color: '#fff' }} />}
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>Home</Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>About</Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>Services</Link>
+                        <li className='nav-item-movies'>
+                            <Link to='/movies' className='nav-links-movies' onClick={closeMobileMenu}>MOVIES</Link>
                         </li>
                         <li className='nav-item'>
                             <Link to='/log-in' className='nav-links' onClick={closeMobileMenu}>Log In</Link>
