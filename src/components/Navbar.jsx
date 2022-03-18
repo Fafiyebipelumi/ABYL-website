@@ -71,14 +71,16 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Logo>E-COMMERCE WEBSITE.</Logo>
+                    <Link to='/' style={{ color: 'black', textDecoration: 'none' }} ><Logo>E-COMMERCE WEBSITE.</Logo></Link>
                 </Center>
                 <Right>
                     <Link to='/register' style={{ textDecoration: 'none', color: '#000' }}><MenuItem>REGISTER</MenuItem></Link>
                     <Link to='/login' style={{ textDecoration: 'none', color: '#000' }}><MenuItem>SIGN IN</MenuItem></Link>
                     <MenuItem>
-                        <Badge badegContent={4} color="primary">
-                            <ShoppingCartIcon />
+                        <Badge >
+                            <Link to='/cart'>
+                                <ShoppingCartIcon style={{ color: 'black' }} />
+                            </Link>
                         </Badge>
                     </MenuItem>
                 </Right>

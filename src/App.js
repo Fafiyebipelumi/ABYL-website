@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ProductList from './pages/ProductList';
 import Login from './pages/Login';
 import Register from './pages/Register';
-// import SingleProduct from './pages/SingleProduct';
-// import ProductList from './pages/ProductList';
+import Cart from './pages/Cart';
+import SingleProduct from './pages/SingleProduct';
+
 
 function App() {
   return (
@@ -23,6 +24,12 @@ function App() {
         </Route>
         <Route path='/login'>
           <Login />
+        </Route>
+        <Route path='/cart'>
+          <Cart />
+        </Route>
+        <Route path='/single-product'>
+          <SingleProduct />
         </Route>
       </Switch>
     </Router>
