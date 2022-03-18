@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { SliderData } from "../data";
 import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
+import {mobile} from '../responsive';
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     width: 100%;
@@ -10,6 +12,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+    ${mobile({display: 'none'})} 
 `;
 
 const Arrow = styled.div`
@@ -133,7 +136,7 @@ const Slider = () => {
                             <InfoContainer>
                                 <Title>{slide.heading}</Title>
                                 <Desc>{slide.desc}</Desc>
-                                <Button>SHOW NOW</Button>
+                                <Link to='/single-product'><Button>SHOW NOW</Button></Link>
                             </InfoContainer>
                         </Slide>
                     );
